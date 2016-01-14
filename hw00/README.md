@@ -6,14 +6,18 @@ We are using Classroom for Github. To create your private repository for
 this assignment, use the link in the Piazza announcement. In all assignments,
 you should keep your work in that repository.
 
+If there is no starter code, such as in this homework, you can use Cargo to
+initialize the git repository for you. See below. But first, Rust!
+
 ### Installing Rust ###
+
 For this homework, all you'll have to do is install the Rust compiler (rustc)
 and the Rust package manager (Cargo). We'll be using Rust v1.6 for this class.
 (Version 1.6 is set to be released next Thursday! This homework doesn't depend
 on the version of Rust, so it's fine to get started early.)
 
 We recommend using [multirust][multirust], a tool to manage multiple
-installations of Rust on your system.Multirust supports Linux, OS X, and (via
+installations of Rust on your system. Multirust supports Linux, OS X, and (via
 MSYS2). Unfortunately, there is no support for Windows if you are not using
 MSYS2.
 
@@ -73,10 +77,19 @@ remove a lot of the friction of manual project management. If you've ever used
 build power provided by a good `Makefile`.
 
 To make a new project for homework 0, run the command
-`cargo new --bin hw0` (which will *create* the folder `hw0`).
+`cargo new --bin hw00` (which will *create* the folder `hw00`).
 
 Why `--bin`? We want this project to create a standalone executable, rather than
 a library that can be rolled into other projects.
+
+If you run this command while not already inside a git project, Cargo will
+create a git repository (and `.gitignore`) for you. Then, you can add this your
+GitHub repository as a git remote as follows:
+
+```
+git remote add origin git@github.com:cis198-2016s/hw00-<username>.git
+git push -u origin master
+```
 
 Cargo creates this directory structure for you:
 
@@ -104,7 +117,9 @@ Adding to your personal environment setup is one of the many joys of starting
 a new programming language. Rust has a pretty decent amount of support for being
 new to the game.
 
-Take a look at [this list of editor configs][configs.md].
+Take a look at [this list of editor configs][configs.md]. There are more
+unofficial or less-supported ones out there, so it's worth looking around. If
+you aren't sure what to use, all three of your instructors use vim :)
 
   [configs.md]: https://github.com/rust-lang/rust/blob/master/src/etc/CONFIGS.md
 
