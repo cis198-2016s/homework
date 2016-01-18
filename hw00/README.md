@@ -21,18 +21,25 @@ installations of Rust on your system. Multirust supports Linux, OS X, and
 Windows (via MSYS2). Unfortunately, there is no support for Windows if you are
 not using MSYS2.
 
+Multirust maintains a user default toolchain version (stable, beta, or
+nightly). Run `multirust default stable` to set your user preference to stable.
+This will also download the stable toolchain.
+
+**On Linux, OS X, or Windows+MSYS2:**
 Install multirust by following the [instructions on their README][multirust].
 You can also use your local friendly package manager.
 
 [multirust]: https://github.com/brson/multirust
 
-If you are using Windows without MSYS2 or you don't want to install Rust,
+**On Windows (without MSYS2):** 
+You can either use the standard Rust installer from
+[the website](https://www.rust-lang.org/downloads.html), or you can use
+multirust on Eniac.
+
+**On Eniac:**
+If you don't want to install Rust,
 multirust is also available on Eniac. Add this line to your `~/.bashrc` on
 Eniac: `export PATH=$PATH:/home1/c/cis198/local/bin`
-
-Multirust maintains a user default toolchain version (stable, beta, or
-nightly). Run `multirust default stable` to set your user preference to stable.
-This will also download the stable toolchain.
 
 To check that Rust and Cargo are installed properly, run the following commands
 and make sure the output matches below:
