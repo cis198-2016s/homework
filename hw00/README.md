@@ -17,14 +17,14 @@ and the Rust package manager (Cargo). We'll be using Rust v1.6 for this class.
 on the version of Rust, so it's fine to get started early.)
 
 We recommend using [multirust][multirust], a tool to manage multiple
-installations of Rust on your system. Multirust supports Linux, OS X, and (via
-MSYS2). Unfortunately, there is no support for Windows if you are not using
-MSYS2.
+installations of Rust on your system. Multirust supports Linux, OS X, and
+Windows (via MSYS2). Unfortunately, there is no support for Windows if you are
+not using MSYS2.
 
 Install multirust by following the [instructions on their README][multirust].
 You can also use your local friendly package manager.
 
-  [multirust]: https://github.com/brson/multirust
+[multirust]: https://github.com/brson/multirust
 
 If you are using Windows without MSYS2 or you don't want to install Rust,
 multirust is also available on Eniac. Add this line to your `~/.bashrc` on
@@ -82,9 +82,10 @@ To make a new project for homework 0, run the command
 Why `--bin`? We want this project to create a standalone executable, rather than
 a library that can be rolled into other projects.
 
-If you run this command while not already inside a git project, Cargo will
-create a git repository (and `.gitignore`) for you. Then, you can add this your
-GitHub repository as a git remote as follows:
+If you are not already in a git repository when you create your project, Cargo
+will create a git repository (and `.gitignore`) for you. Then, you can add this
+your GitHub repository as a git remote as follows:
+
 
 ```
 git remote add origin git@github.com:cis198-2016s/hw00-<username>.git
