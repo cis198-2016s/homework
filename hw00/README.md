@@ -133,9 +133,8 @@ you aren't sure what to use, all three of your instructors use vim :)
 
 ### Submission
 
-Make sure your work is all committed and pushed to the `master` branch of your
-Classroom for Github repository for `hw00`.
-**Make sure it is visible on Github!**
-This is your submission.
+Commit and push your work to the master branch of your Classroom for Github
+repository for this HW. **Make sure it is visible on Github!** This is your
+submission. (Work must be in the master branch at the due time.)
 
 That's it! ok bye get outta here :point_right:
