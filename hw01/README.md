@@ -1,4 +1,4 @@
-# Homework 01: Rust Finger Exercises #
+# Homework 01: Rust Finger Exercises
 
 **Due 2016-01-27, 11:59pm.**
 

@@ -1,4 +1,4 @@
-## Homework 0: Hello Rust & Hello Cargo! ##
+# Homework 00: Hello Rust & Hello Cargo!
 
 **Due 2016-01-25, 11:59pm.**
 
@@ -9,7 +9,7 @@ you should keep your work in that repository.
 If there is no starter code, such as in this homework, you can use Cargo to
 initialize the git repository for you. See below. But first, Rust!
 
-### Installing Rust ###
+## Installing Rust
 
 For this homework, all you'll have to do is install the Rust compiler (rustc)
 and the Rust package manager (Cargo). We'll be using Rust v1.6 for this class.
@@ -54,7 +54,7 @@ cargo 0.6.0-nightly (e1ed995 2015-10-22)
 When version 1.6 is released next week, you should update your version of Rust,
 using `multirust update stable`.
 
-### Hello, Rust! ###
+## Hello, Rust!
 
 Now that Rust is ready to roll, let's write our first "hello world" program.
 Create a file named `main.rs` and modify the code snippet below to print out
@@ -71,7 +71,7 @@ Once you've created your program, compile it using `rustc main.rs` and run the
 resulting `main` binary to test it. Boom! You did it! You're a Rust programmer
 now! 🎊🎉👍
 
-### Hello, Cargo! ###
+## Hello, Cargo!
 
 Rust has a fantastic package and build manager, Cargo, which is modeled from
 years of learning from other languages. Cargo handles all the gory build
@@ -119,7 +119,7 @@ To finish things off, let's build our project. Simply run `cargo build` from any
 directory in the project tree! You can run your executable with `cargo run`.
 Pretty magic, huh?
 
-### Bonus: Configuration
+## Bonus: Configuration
 
 Adding to your personal environment setup is one of the many joys of starting
 a new programming language. Rust has a pretty decent amount of support for being
@@ -131,7 +131,7 @@ you aren't sure what to use, all three of your instructors use vim :)
 
   [configs.md]: https://github.com/rust-lang/rust/blob/master/src/etc/CONFIGS.md
 
-### Submission
+## Submission
 
 Commit and push your work to the master branch of your Classroom for Github
 repository for this HW. **Make sure it is visible on Github!** This is your
