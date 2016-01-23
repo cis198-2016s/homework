@@ -125,7 +125,7 @@ There are a few different ways to import items from a different module:
    qualify members of the module with the module name (e.g. `problem1::sum()`).
    This is more verbose but does not pollute the namespace of your scope.
 
-We provided a `tests.rs` file with a few test cases to start you off with. You
+We provided a `tests_provided.rs` file with a few test cases to start you off with. You
 should add this to your library as a separate module, as you did with each
 `problemX` module (but the tests don't need to be `pub`).
 
