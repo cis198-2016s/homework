@@ -36,6 +36,8 @@ Cargo creates this directory structure for you:
 
 ```
 hw01
+├── .git/
+├── .gitignore
 ├── Cargo.toml
 └── src
     └── lib.rs
