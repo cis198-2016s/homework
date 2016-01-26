@@ -23,12 +23,14 @@ To start off, let's create a new Rust library: `cargo new hw01`.
 
 If you are not already in a git repository when you create your project, Cargo
 will create a git repository (and `.gitignore`) for you. Then, you can add this
-your GitHub repository as a git remote as follows:
+your GitHub repository as a git remote, with something like:
 
 ```
 git remote add origin git@github.com:cis198-2016s/hw01-<username>.git
 git push -u origin master
 ```
+
+(If you're not using SSH for GitHub, you need to use the HTTPS URL of your repository.)
 
 Cargo creates this directory structure for you:
 
