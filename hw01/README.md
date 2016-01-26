@@ -161,8 +161,9 @@ pub fn sum(slice: &[i32]) -> i32 {
     unimplemented!();
 }
 
-/// Deduplicate items in the input vector `vs`. Produces a vector containing
-/// the first instance of each distinct element of `vs`, in order.
+/// Deduplicates items in the input vector `vs`. Produces a vector containing
+/// the first instance of each distinct element of `vs`, preserving the
+/// original order.
 pub fn dedup(vs: &Vec<i32>) -> Vec<i32> {
     // TODO
     unimplemented!();
