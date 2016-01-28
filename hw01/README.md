@@ -1,6 +1,6 @@
 # Homework 01: Rust Finger Exercises
 
-**Due 2016-01-27, 11:59pm.**
+**Due ~~2016-01-27~~ 2016-01-28, 11:59pm.**
 
 ## Overview ##
 
