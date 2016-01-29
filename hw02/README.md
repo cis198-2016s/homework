@@ -20,8 +20,10 @@ in this file. The main file, `lib.rs`, is rather boring and done for you.
 Your code doesn't have to follow any exact interface, just the guidelines
 below. You'll write the data structure, `insert`, `search`, and tests.
 
-Unlike in HW1, your Git repository will be pre-populated (you won't need to use
-`cargo new`). Just clone it to get going.
+Unlike in HW1, if you create your repository using Classroom for GitHub (link
+on Piazza), your Git repository will be pre-populated (you won't need to use
+`cargo new`). Just clone it to get going. (See the `starter` subrepo for the
+starter repository contents.)
 
 #### Aside: Clippy
 
