@@ -8,7 +8,7 @@ as TMLL, because that's much easier to pronounce, right?)
 
 Even though we're implementing a [BST][], you should read Chapters 1-2
 (introduction and first linked list); they're a great place to start.
-Gankro's writing is entertaining and enlightening.
+Gankro's writing is really fun to read and the content is enlightening.
 
 [BST]: https://en.wikipedia.org/wiki/Binary_search_tree
 
@@ -20,9 +20,8 @@ in this file. The main file, `lib.rs`, is rather boring and done for you.
 Your code doesn't have to follow any exact interface, just the guidelines
 below. You'll write the data structure, `insert`, `search`, and tests.
 
-As in HW1, you should create a new library crate (`cargo new ...`), then add
-your GitHub repository (created from the Classroom link on Piazza) as a remote
-(`git remote add origin ...`).
+Unlike in HW1, your Git repository will be pre-populated (you won't need to use
+`cargo new`). Just clone it to get going.
 
 #### Aside: Clippy
 
@@ -76,6 +75,11 @@ Now, instead of TMLL's `push` and `pop`, we'll implement:
   the element was found.
 
 #### Hints from our reference implementation
+
+You should need: `struct`, `enum`, `impl`, `match`/`ref`/`ref mut`, `Box`,
+`&`/`&mut`, dereferencing (`*`).
+
+You should not need: named lifetimes, `Option`, `Vec`, `use`.
 
 In our reference implementation, `BST::insert` and `BST::search` are short
 functions which just call longer, recursive member functions of `Link`:
