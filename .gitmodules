@@ -1,0 +1,4 @@
+[submodule "hw02/starter"]
+	path = hw02/starter
+	url = git@github.com:cis198-2016s/hw02.git
+	branch = master
