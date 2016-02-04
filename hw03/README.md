@@ -93,7 +93,7 @@ As in TMLL 3:
     over `T`. Make sure your old tests still pass.
 
 * Now you will transform your ordinary BST into an extraordinary BST iterator!
-  We're going to use the `Iterator` trait.
+  We're going to use the [`Iterator`] trait.
 
   * Build yourself an `IntoIter` struct like the one in [TMLL 3.4][].
 
@@ -107,10 +107,12 @@ As in TMLL 3:
       `next(&mut self) -> Option<Self::Item>`.
 
   * Instead of implementing `BST::into_iter` as a plain member function,
-    we're going to do something _way_ cooler: 
+    we're going to do something _way_ cooler:
+
     * [`IntoIterator`][] is a trait with one method, `into_iter`. This is the
       sugar that fuels Rust's `for` loops. Go ahead and `impl IntoIterator for
       BST`. Don't forget: this trait requires you to declare associated types!
+      Read the [docs][`IntoIterator`] for the deets.
 
 [`Iterator`]: https://doc.rust-lang.org/std/iter/trait.Iterator.html
 [`IntoIterator`]: https://doc.rust-lang.org/std/iter/trait.IntoIterator.html
@@ -131,14 +133,11 @@ for elt in bst { // calls bst.into_iter()
   * But your power is yet incomplete. What about borrowed iteration? Implement
     an `Iter` struct, as described in [TMLL 3.5] (similar to `IntoIter`).
 
-  * Again, instead of implementing `BST::iter`, we're going to lord our
-    superiority over Gankro's tutorial and use `IntoIterator`. But you can't
-    just implement a trait _twice_ for the same struct; that would be absurd.
-    And confusing. It would break so many rules. Instead, we'll implement this
-    for `&BST`.
-
-    * You're going to need named lifetimes here! To start, you have to
-      implement `impl<'a, T> IntoIterator for &'a BST<T>`.
+    * Again, instead of implementing `BST::iter`, we're going to lord our
+      superiority over Gankro's tutorial and use `IntoIterator`. But you can't
+      just implement a trait _twice_ for the same struct; that would be absurd.
+      And confusing. It would break so many rules. Instead, we'll implement this
+      for `&BST`.
 
     * This is what allows:
 
@@ -147,6 +146,9 @@ for elt in &bst { // calls bst.into_iter()
     println!("{}", elt);
 }
 ```
+
+    * You're going to need named lifetimes here! To start, you have to
+      implement `impl<'a, T> IntoIterator for &'a BST<T>`.
 
   * Finally, we'll move on to [TMLL 3.6][], `IterMut`. You know what you need
     to do.
