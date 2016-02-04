@@ -10,11 +10,18 @@ assignment isn't intended to be especially difficult, but will make sure you're
 set up properly in the Rust ecosystem, and will give you some good experience
 using the Rust compiler.
 
+#### Classroom for GitHub
+
+We're using Classroom for GitHub, which manages private homework repositories
+for students. To create your very own private homework repository (owned by
+us), click this link:
+* https://classroom.github.com/assignment-invitations/d7a2cbae7d57de44e29c302c8e353a43
+
 ## Provided Code ##
 
-Just one file, `tests_provided.rs`, which contains several test cases. We're asking you
-to write everything else from scratch, but we'll give you function signatures below,
-as a starting point.
+Just one file, `tests_provided.rs`, which contains several test cases. We're
+asking you to write everything else from scratch, but we'll give you function
+signatures below, as a starting point.
 
 ## Part 01: Cargo ##
 
@@ -30,7 +37,8 @@ git remote add origin git@github.com:cis198-2016s/hw01-<username>.git
 git push -u origin master
 ```
 
-(If you're not using SSH for GitHub, you need to use the HTTPS URL of your repository.)
+(If you're not using SSH for GitHub, you need to use the HTTPS URL of your
+repository.)
 
 Cargo creates this directory structure for you:
 
@@ -43,8 +51,8 @@ hw01
     └── lib.rs
 ```
 
-You can build this project from anywhere in the project tree with `cargo build`.
-Remember to compile periodically as you work.
+You can build this project from anywhere in the project tree with
+`cargo build`. Remember to compile periodically as you work.
 
 ### Modules ###
 
@@ -73,8 +81,8 @@ pub mod problem4 {
 // ...
 ```
 
-But this gets unwieldy pretty fast. You can instead put these modules in separate
-files:
+But this gets unwieldy pretty fast. You can instead put these modules in
+separate files:
 
 ```
 hw01
@@ -93,12 +101,12 @@ Every `.rs` file defines a module that is the same as its filename, so
 Crates are organized into trees of files, where one file is the root, typically
 `src/lib.rs` (or `src/main.rs`). To include a module, you need to declare it in
 the crate root. To add `problem1` as a module, add the line `pub mod problem1;`
-to the top of `src/lib.rs`. (This is equivalent to defining a module in the file
-itself, with `pub mod problem1 { ... }`.) Until you add this directive, Cargo will
-not try to build `problem1` part of your crate. The `pub` keyword in this
-directive exposes the module `problem1` to any other crate that imports your
-library. You can omit `pub` to leave modules private; however, if a function is
-not exported or used internally, it will emit a dead code warning.
+to the top of `src/lib.rs`. (This is equivalent to defining a module in the
+file itself, with `pub mod problem1 { ... }`.) Until you add this directive,
+Cargo will not try to build `problem1` part of your crate. The `pub` keyword in
+this directive exposes the module `problem1` to any other crate that imports
+your library. You can omit `pub` to leave modules private; however, if a
+function is not exported or used internally, it will emit a dead code warning.
 
 Within a module, all members (functions, types, submodules) are private by
 default. The `pub` keyword can also be used to make any of these available from
@@ -129,9 +137,9 @@ There are a few different ways to import items from a different module:
    qualify members of the module with the module name (e.g. `problem1::sum()`).
    This is more verbose but does not pollute the namespace of your scope.
 
-We provided a `tests_provided.rs` file with a few test cases to start you off with. You
-should add this to your library as a separate module, as you did with each
-`problemX` module (but the tests don't need to be `pub`).
+We provided a `tests_provided.rs` file with a few test cases to start you off
+with. You should add this to your library as a separate module, as you did with
+each `problemX` module (but the tests don't need to be `pub`).
 
 You can read more about modules in the Rust book
 [here](https://doc.rust-lang.org/book/crates-and-modules.html).
@@ -196,8 +204,8 @@ going to run them.
 
 All of the functions in `test.rs` are annotated with the `#[test]` attribute;
 this tells the compiler that they're tests. Test functions must have the
-signature `fn() -> ()`, or else they will not compile. Tests will be run when you
-invoke `cargo test`.
+signature `fn() -> ()`, or else they will not compile. Tests will be run when
+you invoke `cargo test`.
 
 Any test which doesn't cause a `panic!` is considered to pass. You should use
 [`assert!`][assert] or [`assert_eq!`][assert_eq] to check guarantees and
@@ -281,9 +289,9 @@ pub fn sieve(n: u32) -> Vec<u32> {
 classical mathematics and computer science puzzle. Imagine you have three pegs,
 one of which holds a stack of discs in increasing size from bottom to top. Your
 goal is to move all of the discs from the first peg to the third peg, using the
-second peg as an intermediate. Your only restrictions are that you may only move
-one disc at a time, and a disc may only be placed on a disc larger than it (or
-on an empty peg). Check out the Wikipedia page for more details and snazzy
+second peg as an intermediate. Your only restrictions are that you may only
+move one disc at a time, and a disc may only be placed on a disc larger than it
+(or on an empty peg). Check out the Wikipedia page for more details and snazzy
 animations.
 
 In this instance, we've provided you with an enum type containing the possible

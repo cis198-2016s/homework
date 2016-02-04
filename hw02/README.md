@@ -1,5 +1,8 @@
-## Homework 2: A Mediocre Binary Search Tree
+# Homework 2: A Mediocre Binary Search Tree
 
+**Due 2016-02-03, 11:59pm.**
+
+## Overview
 This assignment is modeled after Alexis Beingessner (Gankro)'s [_Learning Rust
 With Entirely Too Many Linked Lists_][TMLL] (herein referred to
 as TMLL, because that's much easier to pronounce, right?)
@@ -12,7 +15,14 @@ Gankro's writing is really fun to read and the content is enlightening.
 
 [BST]: https://en.wikipedia.org/wiki/Binary_search_tree
 
-### Instructions
+#### Classroom for GitHub
+
+We're using Classroom for GitHub, which manages private homework repositories
+for students. To create your very own private homework repository (owned by
+us), click this link:
+* https://classroom.github.com/assignment-invitations/9f6544879f4d5995f8a23cf35caf2133
+
+## Instructions
 
 Write your implementation in the `src/first.rs` file. You'll also write tests
 in this file. The main file, `lib.rs`, is rather boring and done for you.
@@ -60,7 +70,8 @@ As in TMLL 2:
 
 * Write a `BST` type similar to the one in TMLL 2: a `pub struct` with a `root`
   element of type `Link`. Implement `BST::new()` which creates an empty BST.
-    * This will be the only `pub struct`. The others are implementation details.
+    * This will be the only `pub struct`. The others are implementation
+      details.
 * Define `Link` as an `enum` with two instances: `Empty` and `More`, where
   `More` contains a boxed `Node`.
 * Define `Node` as a `struct` containing an `i32` element. Instead of a single
@@ -72,10 +83,10 @@ As in TMLL 2:
 
 Now, instead of TMLL's `push` and `pop`, we'll implement:
 
-* (`pub`) `bst.insert(i32) -> bool`: Insert an element into the BST. Return true if
-  successful, or false if the element was already in the BST.
-* (`pub`) `bst.search(i32) -> bool`: Search for an element in the BST. Return true iff
-  the element was found.
+* (`pub`) `bst.insert(i32) -> bool`: Insert an element into the BST. Return
+  true if successful, or false if the element was already in the BST.
+* (`pub`) `bst.search(i32) -> bool`: Search for an element in the BST. Return
+  true iff the element was found.
 
 #### Hints from our reference implementation
 
@@ -105,8 +116,8 @@ functions which just call longer, recursive member functions of `Link`:
 
 ### Tests
 
-You can run tests with `cargo test`. To show any printed output of successful tests, use
-`cargo test -- --nocapture`.
+You can run tests with `cargo test`. To show any printed output of successful
+tests, use `cargo test -- --nocapture`.
 
 Tests should be defined in the way specified in
 [TMLL 2.6](http://cglab.ca/~abeinges/blah/too-many-lists/book/first-test.html).
@@ -130,9 +141,10 @@ to be any more complex than the tests in TMLL 2.6.
 
 ### Submission
 
-Just like in homework 01, commit and push your work to the master branch of your
-Classroom for Github repository for this HW. Make sure it is visible on Github!
-This is your submission. (Work must be in the master branch at the due time.)
+Just like in homework 01, commit and push your work to the master branch of
+your Classroom for Github repository for this HW. Make sure it is visible on
+Github! This is your submission. (Work must be in the master branch at the due
+time.)
 
 `cargo test` should work to run all of the tests in your homework on stable
 Rust. Make sure you have written tests which cover every one of your functions.

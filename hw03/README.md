@@ -1,4 +1,8 @@
-## Homework 3: "Iterating" On Your Binary Search Tree
+# Homework 3: "Iterating" On Your Binary Search Tree
+
+**Due 2016-02-10, 11:59pm.**
+
+## Overview
 
 This assignment is modeled after Alexis Beingessner (Gankro)'s [_Learning Rust
 With Entirely Too Many Linked Lists_][TMLL] (TMLL).
@@ -8,12 +12,14 @@ With Entirely Too Many Linked Lists_][TMLL] (TMLL).
 This time, you should look at Chapter 3. We won't do everything in there, but
 the content is similar.
 
+#### Classroom for GitHub
+
 We're using Classroom for GitHub, which manages private homework repositories
 for students. To create your very own private homework repository (owned by
 us), click this link:
 * https://classroom.github.com/assignment-invitations/678e4f3868daaec525ce8f75f23fc53c 
 
-### Instructions
+## Instructions
 
 Write your implementation and tests in `src/second.rs`. `lib.rs` is provided.
 
@@ -150,19 +156,21 @@ for elt in &mut bst { // calls bst.into_iter()
 }
 ```
 
-  * Test all three of your iterators. To do this, you should check two things:
-
-    * For a BST `bst`, you should be able to compile a for loop over
-      `bst`, `&bst`, or `&mut bst`.
-
-    * The values returned by the iterator should be correct. You can explictly
-      get an iterator (with, for example, `(&mut bst).into_iter()`), then
-      `assert_eq!` the values returned by `next()`.
-
 [TMLL 3.1]: http://cglab.ca/~abeinges/blah/too-many-lists/book/second-option.html
 [TMLL 3.4]: http://cglab.ca/~abeinges/blah/too-many-lists/book/second-into-iter.html
 [TMLL 3.5]: http://cglab.ca/~abeinges/blah/too-many-lists/book/second-iter.html
 [TMLL 3.6]: http://cglab.ca/~abeinges/blah/too-many-lists/book/second-iter-mut.html
+
+### Tests
+
+Test all three of your iterators. To do this, you should check two things:
+
+* For a BST `bst`, you should be able to compile a for loop over
+  `bst`, `&bst`, or `&mut bst`.
+
+* The values returned by the iterator should be correct. You can explictly
+  get an iterator (with, for example, `(&mut bst).into_iter()`), then
+  `assert_eq!` the values returned by `next()`.
 
 ### Submission
 
