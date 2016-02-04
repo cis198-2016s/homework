@@ -1,4 +1,4 @@
-## Homework 2: A Mediocre Binary Search Tree ##
+## Homework 2: A Mediocre Binary Search Tree
 
 This assignment is modeled after Alexis Beingessner (Gankro)'s [_Learning Rust
 With Entirely Too Many Linked Lists_][TMLL] (herein referred to
@@ -23,7 +23,8 @@ below. You'll write the data structure, `insert`, `search`, and tests.
 Unlike in HW1, if you create your repository using Classroom for GitHub (link
 on Piazza), your Git repository will be pre-populated (you won't need to use
 `cargo new`). Just clone it to get going. (See the `starter` subrepo for the
-starter repository contents.)
+starter repository contents.) You should edit `Cargo.toml` to add yourself as
+the author.
 
 #### Aside: Clippy
 
