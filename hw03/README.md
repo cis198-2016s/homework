@@ -59,10 +59,11 @@ haven't covered this in class, you can  use `match`es instead of closures
 everywhere in this assignment. However, you're welcome to use `map`/closures if
 you want the extra practice - simple closures aren't hard.
 
-> Second, match option { None => None, Some(x) => Some(y) } is such an
-> incredibly common idiom that it was called map. map takes a function to
-> execute on x in the Some(x) to produce the y in Some(y). We could write a
-> proper fn and pass it to map, but we'd much rather write what to do inline.
+> Second, `match option { None => None, Some(x) => Some(y) }` is such an
+> incredibly common idiom that it was called `map`. `map` takes a function to
+> execute on `x` in the `Some(x)` to produce the `y` in `Some(y)`. We could
+> write a proper `fn` and pass it to `map`, but we'd much rather write what to
+> do *inline*.
 
 #### Details
 
