@@ -44,7 +44,7 @@ We will use:
 
 * `Option` and `take` (but *not* `map`).
 * Type aliases.
-* Generic type parameters (`BST<T>`) with trait bounds (`PartialOrd`).
+* Generic type parameters (`BST<T>`) with trait bounds (`Ord`).
 * Named lifetimes and lifetime bounds on type parameters.
 * Traits, trait implementations, and associated types.
 * Iterators.
