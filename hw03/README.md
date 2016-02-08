@@ -100,7 +100,9 @@ As in TMLL 3:
     * Since this is a BST, and not a list, we're going to cheat a bit and
       just iterate over the rightmost edge of the tree, since that's less
       annoying. (If you feel like it, you can try doing an in-order
-      traversal of the tree instead. Try the cheaty version first, though.)
+      traversal of the tree instead. We can't guarantee that you can do it
+      with the material we have covered so far, so try the cheaty version
+      first!)
 
     * Implement the [`Iterator`][] trait for `IntoIter`. This requires an
       associated type, `type Item`, and an implementation of
