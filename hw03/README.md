@@ -133,7 +133,7 @@ for elt in bst { // calls bst.into_iter()
 ```
 
   * But your power is yet incomplete. What about borrowed iteration? Implement
-    an `Iter` struct, as described in [TMLL 3.5] (similar to `IntoIter`).
+    an `Iter` struct, as described in [TMLL 3.5][] (similar to `IntoIter`).
 
     * Again, instead of implementing `BST::iter`, we're going to lord our
       superiority over Gankro's tutorial and use `IntoIterator`. But you can't
@@ -147,7 +147,7 @@ for elt in bst { // calls bst.into_iter()
     * This is what allows:
 
 ```rust
-for elt in &bst { // calls bst.into_iter()
+for elt in &bst { // calls (&bst).into_iter()
     println!("{}", elt);
 }
 ```
@@ -156,7 +156,7 @@ for elt in &bst { // calls bst.into_iter()
     to do.
 
 ```rust
-for elt in &mut bst { // calls bst.into_iter()
+for elt in &mut bst { // calls (&mut bst).into_iter()
     println!("{}", elt);
 }
 ```
