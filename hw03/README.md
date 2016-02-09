@@ -141,6 +141,9 @@ for elt in bst { // calls bst.into_iter()
       And confusing. It would break so many rules. Instead, we'll implement this
       for `&BST`.
 
+    * You're going to need named lifetimes here! To start, you have to
+      implement `impl<'a, T> IntoIterator for &'a BST<T>`.
+
     * This is what allows:
 
 ```rust
@@ -148,9 +151,6 @@ for elt in &bst { // calls bst.into_iter()
     println!("{}", elt);
 }
 ```
-
-    * You're going to need named lifetimes here! To start, you have to
-      implement `impl<'a, T> IntoIterator for &'a BST<T>`.
 
   * Finally, we'll move on to [TMLL 3.6][], `IterMut`. You know what you need
     to do.
