@@ -2,6 +2,9 @@
 
 **Due 2016-02-10, 11:59pm.**
 
+For questions, please post on Piazza (Penn students) or Google Groups (other).
+Links on homepage.
+
 ## Overview
 
 This assignment is modeled after Alexis Beingessner (Gankro)'s [_Learning Rust

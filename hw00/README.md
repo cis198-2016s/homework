@@ -2,6 +2,9 @@
 
 **Due 2016-01-25, 11:59pm.**
 
+For questions, please post on Piazza (Penn students) or Google Groups (other).
+Links on homepage.
+
 #### Classroom for GitHub
 
 We are using Classroom for Github. To

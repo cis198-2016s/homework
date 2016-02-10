@@ -2,6 +2,9 @@
 
 **Due ~~2016-01-27~~ 2016-01-28, 11:59pm.**
 
+For questions, please post on Piazza (Penn students) or Google Groups (other).
+Links on homepage.
+
 ## Overview ##
 
 In this assignment, you'll get your first crack at writing some short functions
