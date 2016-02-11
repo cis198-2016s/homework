@@ -6,3 +6,7 @@
 	path = hw03/starter
 	url = git@github.com:cis198-2016s/hw03.git
 	branch = master
+[submodule "hw04/starter"]
+	path = hw04/starter
+	url = git@github.com:cis198-2016s/hw04.git
+	branch = master
