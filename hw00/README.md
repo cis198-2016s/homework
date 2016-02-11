@@ -7,12 +7,9 @@ Links on homepage.
 
 #### Classroom for GitHub
 
-We are using Classroom for Github. To
-create your private repository for this
-assignment (owned by us), use this link.
-For all assignments, you should keep your
-work in that repository.
-* https://classroom.github.com/assignment-invitations/3cae0812d5cdca2edcd76cb6f6434818
+We're using Classroom for GitHub, which manages private homework repositories
+for students. To create your very own private homework repository (owned by
+us), click the link on the course Piazza.
 
 If there is no starter code, such as in this homework, you can use Cargo to
 initialize the git repository for you. See below. But first, Rust!
