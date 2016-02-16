@@ -75,7 +75,8 @@ error, but represents an exit value).
 
 Because you're a good software engineer, you're going to create your own
 `Result` alias for use in your calculator. Use the provided `Error` enum in
-`rpn.rs` to define an alias over `std::result::Result` à la `std::io::Result`.
+`rpn.rs` to define an alias over `std::result::Result` - a similar aliasing
+can be seen in `std::io::Result`.
 
 ##### External Crates: `rand`
 
