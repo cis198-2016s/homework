@@ -81,6 +81,7 @@ As in TMLL 2:
   `next` element, it should also contain two child `Link`s: `left` and `right`.
 * Add `#[derive(Debug)]` before each of the three types. This allows you to
   debug-print a value, e.g.: `println!("{:?}", bst);`
+    * Use `println!("{:#?}", bst);` for multi-line, indented debug prints!
     * To be able to see printed output of successful tests, use
       `cargo test -- --nocapture`.
 
