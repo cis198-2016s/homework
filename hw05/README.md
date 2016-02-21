@@ -43,9 +43,6 @@ draw it out properly! It's written in some weird... "JSON" format.
 - Finish the JSON parser. The provided code parses a JSON file to create a
   series of rooms connected by hallways. See below for more detail.
 
-- Each room contains a set of Curios. The generation of Curios for a given room
-  is provided.
-
 [*Look around you*][]. What can you see? Nothing! You haven't implemented eyes
 yet. That doesn't make any sense. What are you doing. Nevermind, nevermind. Stop
 asking questions.
@@ -118,7 +115,7 @@ Players have a location (`Rc<RefCell<Room>>`, health (`i32`), gold (`i32`), and
 an account of whether they won (`bool`). Players can `Go` or `Shoot` a room.
 
 Movement between rooms should be implemented by replacing the stored
-`Rc<RefCell<Room>>` contained by the player.
+`Rc<RefCell<Room>>` owned by the player.
 
 ### Castle Structure
 
@@ -133,8 +130,10 @@ Halls are defined as tuples (in as much as JSON allows tuples) between room
 numbers. Rooms are numbered in the order they are defined. Room names should be
 unique.
 
-The JSON parsing is provided; you will start by finishing room and hallway
-generation.
+Each room contains a set of Curios. The generation of Curios for a given room is
+provided. The JSON parsing is provided; you will start by finishing room and
+hallway generation.
+
 
 ## Testing
 
@@ -143,7 +142,7 @@ No tests! Yay!
 We're not providing any tests nor expecting that you write any. We'll grade your
 game by simply playing it.
 
-## Questions
+## Writeup
 
 Edit the README in your project with a (brief!) explanation of how `Rc` and
 `RefCell` are used and why they are necessary in this game.
