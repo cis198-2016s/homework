@@ -165,8 +165,5 @@ Commit and push your work to the master branch of your Classroom for Github
 repository for this HW. Make sure it is visible on Github! This is your
 submission. (Work must be in the master branch at the due time.)
 
-`cargo test` should work to run all of the tests in your homework on stable
-Rust. Make sure you have written tests which cover every one of your functions.
-
 If you have any comments or feedback on this assignment, include them in the
 README of your submission.
