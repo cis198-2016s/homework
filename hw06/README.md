@@ -1,4 +1,4 @@
-# Homework 06: A Bulletin Board System (BBS)
+# Homework 6: BB-198 - A Bulletin Board System (BBS)
 
 **Due Sunday, 2016-03-06, 11:59pm.** (TODO)
 
