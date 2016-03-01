@@ -32,16 +32,6 @@ Hyper is the beginning of the future. Hyper contains both a server, which
 manually handles requests that it receives, and a client, which can build HTTP
 requests and parse HTTP responses. You will use both in this assignment.
 
-Hyper uses OpenSSL, which means OpenSSL needs to be installed.
-
-On OS X, you need to set environment variables telling Cargo where to find
-OpenSSL headers on your computer. Read this StackOverflow post and follow the
-instructions.
-
-On Linux, you may need to install a development package for OpenSSL (this
-provides OpenSSL's header files, so Hyper can link against them). On Ubuntu, you
-can install this with `apt-get install libssl-dev`.
-
 ## lib
 
 We're going to build this BBS in a library crate, so it can be easily deployed
