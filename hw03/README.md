@@ -143,6 +143,8 @@ for elt in bst { // calls bst.into_iter()
       just implement a trait _twice_ for the same struct; that would be absurd.
       And confusing. It would break so many rules. Instead, we'll implement this
       for `&BST`.
+      
+    * Again, iterate over the rightmost edge of the tree.
 
     * You're going to need named lifetimes here! To start, you have to
       implement `impl<'a, T> IntoIterator for &'a BST<T>`.
