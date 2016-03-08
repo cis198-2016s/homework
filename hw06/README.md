@@ -1,6 +1,6 @@
 # Homework 6: BB-198 - A Bulletin Board System (BBS)
 
-**Due Sunday, 2016-03-06, 11:59pm.** (TODO)
+**Due Sunday, 2016-03-06, 11:59pm.**
 
 The internet is the beginning of the hyper-connected future. Isn't it great?
 We're working to create a new _wireless_ social network, where people can
