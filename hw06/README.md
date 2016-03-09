@@ -35,8 +35,10 @@ requests and parse HTTP responses. You will use both in this assignment.
 Hyper uses OpenSSL, which means OpenSSL needs to be installed.
 
 On OS X, you need to set environment variables telling Cargo where to find
-OpenSSL headers on your computer. Read this StackOverflow post and follow the
-instructions.
+OpenSSL headers on your computer. Read
+[this StackOverflow post][osx_ssl_instructions] and follow the instructions.
+
+[osx_ssl_instructions]: http://stackoverflow.com/questions/34612395/openssl-crate-fails-compilation-on-mac-os-x-10-11
 
 On Linux, you may need to install a development package for OpenSSL (this
 provides OpenSSL's header files, so Hyper can link against them). On Ubuntu, you
