@@ -84,8 +84,7 @@ existing request handler (`req_handler`) the ability to receive posts through
 POST requests. The body of a POST request will contain a JSON-encoded `Message`
 (defined in `lib.rs`). You should append each post to the bulletin board's data
 page (`HTML_DATA`) when it's received. You should also update the GET request
-handler to include the posted messages when it generates a page when it
-generates a page.
+handler to include the posted messages when it generates a page.
 
 * For more context on RESTful APIs and the difference between GET and POST
   requests, you can read this [StackOverflow page][restful].
