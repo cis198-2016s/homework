@@ -35,8 +35,10 @@ requests and parse HTTP responses. You will use both in this assignment.
 Hyper uses OpenSSL, which means OpenSSL needs to be installed.
 
 On OS X, you need to set environment variables telling Cargo where to find
-OpenSSL headers on your computer. Read this StackOverflow post and follow the
-instructions.
+OpenSSL headers on your computer. Read
+[this StackOverflow post][osx_ssl_instructions] and follow the instructions.
+
+[osx_ssl_instructions]: http://stackoverflow.com/questions/34612395/openssl-crate-fails-compilation-on-mac-os-x-10-11
 
 On Linux, you may need to install a development package for OpenSSL (this
 provides OpenSSL's header files, so Hyper can link against them). On Ubuntu, you
@@ -82,8 +84,7 @@ existing request handler (`req_handler`) the ability to receive posts through
 POST requests. The body of a POST request will contain a JSON-encoded `Message`
 (defined in `lib.rs`). You should append each post to the bulletin board's data
 page (`HTML_DATA`) when it's received. You should also update the GET request
-handler to include the posted messages when it generates a page when it
-generates a page.
+handler to include the posted messages when it generates a page.
 
 * For more context on RESTful APIs and the difference between GET and POST
   requests, you can read this [StackOverflow page][restful].
