@@ -125,7 +125,7 @@ As in TMLL 3:
   * BAM! Now your BST can harness the power of `for` loops. Try this:
 
 ```rust
-let bst = BST::new();
+let mut bst = BST::new();
 bst.insert(1);
 bst.insert(2);
 bst.insert(3);
