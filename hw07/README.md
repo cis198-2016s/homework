@@ -19,7 +19,7 @@ us), click this link:
 
 ## Background
 
-**This assignment will require a modern version of Firefox or Chrome.**
+**This assignment should work on [any modern browser](http://caniuse.com/#feat=websockets); tested on Firefox and Chrome.**
 
 ### WebSockets
 
