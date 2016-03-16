@@ -18,7 +18,9 @@ We're using Classroom for GitHub, which manages private homework repositories
 for students. To create your very own private homework repository (owned by
 us), click this link:
 
-https://classroom.github.com/assignment-invitations/c674a59f072e68a140e54599fcf35e8f
+* https://classroom.github.com/assignment-invitations/c674a59f072e68a140e54599fcf35e8f
+
+## Background
 
 ### [`hyper.rs`][]
 
@@ -44,7 +46,9 @@ On Linux, you may need to install a development package for OpenSSL (this
 provides OpenSSL's header files, so Hyper can link against them). On Ubuntu, you
 can install this with `apt-get install libssl-dev`.
 
-## lib
+## Instructions
+
+### lib
 
 We're going to build this BBS in a library crate, so it can be easily deployed
 to others who want to use it. This crate will contain `lib.rs` as before, which
@@ -70,7 +74,7 @@ Here's what's defined in `lib.rs`:
   - `HTML_HEADER`, `HTML_DATA`, `HTML_FOOTER`: the local files which the server
     uses to generate the page.
 
-## `bin/server`
+### `bin/server`
 
 Provided: A basic web server which can respond to GET requests at
 http://127.0.0.1:1980 and serves a static web page. It generates this static web
@@ -95,7 +99,7 @@ Notice that, since the `bbs` library is external to this server, you need to
 declare it with `extern crate bbs` at the top of your file, and import parts as
 needed.
 
-## `bin/client`
+### `bin/client`
 
 Provided: A client which initializes a user and makes a GET request to read the
 current bulletin board.
@@ -109,7 +113,7 @@ you may retain the current command line interface (where the user specifies
 their username), and allow the user to post messages to the BBS by reading from
 standard input.
 
-## `bin/bot`
+### `bin/bot`
 
 Oh no! You've put all of this hard work in, and your bulletin board still
 doesn't have any users. ~~Because you have no friends,~~ To help build activity
@@ -143,7 +147,7 @@ what you've done in your README.
 
 [random-api]: https://www.random.org/clients/http/
 
-## Feature List
+### Feature List
 
 To recap, here are all the features you should implement:
 
