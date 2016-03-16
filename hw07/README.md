@@ -24,8 +24,8 @@ us), click this link:
 ### WebSockets
 
 WebSockets are a web technology for allowing JavaScript in webpages to connect 
-back to servers using a bidirectional data stream. WebSockets behave _very_
-similarly to TCP streams!
+back to servers using a bidirectional data stream. WebSockets behave very
+similarly to TCP streams (but are message-based).
 
 We will be using the `rust-websocket` library. You'll definitely need to take
 a look at some of the documentation and examples:
