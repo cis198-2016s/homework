@@ -101,6 +101,12 @@ a thread to listen for incoming WebSockets connections on **port 1981**.
 We've also given you a (de)serializable `enum ChatAction` - don't modify this;
 the JavaScript code depends on it!
 
+**Note:** The messages received-from and sent-to the client should be JSON
+object strings with the same form as `rustc_serialize`'s serialization of the
+`ChatAction` type. This means you can `json::encode` `ChatAction`s to create
+text to send to the web browser, and `json::decode` to turn the web browser's
+messages into `ChatAction`s.
+
 The [example server](https://github.com/cyderize/rust-websocket/blob/master/examples/server.rs)
 will be an important resource - you'll use a lot of the same boilerplate code.
 (Note: we aren't using a protocol; the protocol response isn't necessary.)
