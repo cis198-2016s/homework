@@ -61,6 +61,8 @@ This project is worth 40% of the final course grade.
 
 ### Ideas
 
+* http://www.ncameron.org/rust.html
+* https://www.rust-lang.org/contribute.html
 * https://www.reddit.com/r/rust/comments/3bjl53/rust_language_project_ideas/
 * https://github.com/rust-lang/rust/blob/master/CONTRIBUTING.md
 * https://github.com/servo/servo/blob/master/CONTRIBUTING.md
