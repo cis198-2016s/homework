@@ -22,11 +22,10 @@ sheet for meetings, probably on Friday, April 1.
 
 This project is worth 40% of the final course grade.
 
-* **TENTATIVE**
-    * 15%: Proposal and Presentation
-    * 20%: Milestone 1 Presentation and Status
-    * 20%: Milestone 2 Presentation and Status
-    * 45%: Final Presentation, Status, and Report
+* 15%: Proposal and Presentation
+* 20%: Milestone 1 Presentation and Status
+* 20%: Milestone 2 Presentation and Status
+* 45%: Final Presentation, Status, and Report
 
 
 ## Project Guidelines
@@ -61,6 +60,9 @@ This project is worth 40% of the final course grade.
 
 ### Ideas
 
+These are our ideas - none of them have been investigated and you don't
+have to use any of them.
+
 * http://www.ncameron.org/rust.html
 * https://www.rust-lang.org/contribute.html
 * https://www.reddit.com/r/rust/comments/3bjl53/rust_language_project_ideas/
@@ -70,7 +72,7 @@ This project is worth 40% of the final course grade.
 * https://github.com/redox-os/redox#contributing
 
 * Parallel computation (e.g. scientific computing or ray tracing)
-* Other scientific computing
+* Other fast scientific computing
 * Safe(!) bindings for a C API
 * Rewriting slow parts of other programs (e.g. Python/Ruby)
 * Some interesting distributed system
