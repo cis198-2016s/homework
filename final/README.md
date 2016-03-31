@@ -9,6 +9,7 @@ do with this fancy new programming language you've just learned.
 * Thu 3/31 - Proposal Draft Due (PDF via email)
 * Fri 4/01 - Proposal Meeting (by appointment)
 * Wed 4/06 - Proposal Presentation (in class) (4 min)
+    * Please also send: final proposal, repository link, and documentation link.
 * Wed 4/13 - Milestone 1 Presentation (in class) (2 min)
 * Wed 4/20 - Milestone 2 Presentation (in class) (2 min)
 * Wed 4/27 - Final Presentation (in class) (6 min)
@@ -27,10 +28,19 @@ This project is worth 40% of the final course grade.
 * 20%: Milestone 2 Presentation and Status
 * 45%: Final Presentation, Status, and Report
 
+**Important:** "Status" grading will be based primarily on your documentation.
+Write in-depth documentation! You'll need to use rustdoc to generate
+documentation before each presentation
+(see below: [Documentation](#documentation)).
+
+Please host docs somewhere online. For example, you may use a
+[GitHub Pages](https://pages.github.com/) project site,
+by putting the generated docs on a `gh-pages` branch.
 
 ## Project Guidelines
 
-* Groups may be 1-2 people, 2 preferred. Collaborate via GitHub (obviously).
+* Groups may be 1-3 people, 2 preferred. Collaborate via GitHub (obviously).
+  Make your own repository if applicable.
 
 * You can either make your own project or contribute to an existing open-source
   project. If you do the latter, make sure that the project owners are okay
@@ -40,12 +50,12 @@ This project is worth 40% of the final course grade.
 * If you make a new project, we _prefer_ (but don't require) things that
   haven't been done in Rust before.
 
-* Your idea needs to be doable in 3 weeks. This will probably be all of your
+* Your idea needs to be doable in 3 weeks. This will be all of your
   198 work during those weeks, so schedule accordingly.
 
 * We expect you to do about (3 weeks * 0.5 credit) worth of work per person -
   but what that means is subjective. More work will mean a more impressive
-  project!
+  project - but it's much more important that you finish!
 
 * If your idea is in danger of being too big, you need to have a plan for how
   to scale it back. Carve out a reasonable subset of the idea as your baseline,
@@ -53,6 +63,7 @@ This project is worth 40% of the final course grade.
 
 * We would really like your project to be open-source! You don't have to if you
   really don't want to, but contributing to the Rust ecosystem is ideal.
+  You don't need to pick licensing immediately, but consider Apache and MIT.
 
 * If you have no ideas you like, you might consider putting out a call for
   project ideas to the Rust community (e.g. via Reddit).
@@ -88,7 +99,7 @@ have to use any of them.
 * Abstract: Your idea in a sentence or two. New project or contribution?
 
 * Open-source or not. If not, why?
-  You don't need to pick a license right now, but MIT and Apache are good.
+  You don't need to pick a license right now, but Apache and MIT are good.
 
 * Project outline: Your minimal goals, expected goals, and stretch goals.
     * This should be detailed enough that we can judge the complexity and merit.
@@ -108,6 +119,10 @@ rustdoc documentation for the work you're presenting (see below).
 If you're contributing, this means it should be in your fork.
 
 ## Documentation
+
+```sh
+cargo rustdoc -- --no-defaults --passes collapse-docs --passes unindent-comments
+```
 
 If you are working on a standalone project, you should have rustdoc
 documentation, hosted online, documenting all of the work you've done so far,
