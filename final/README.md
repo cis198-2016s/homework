@@ -29,8 +29,8 @@ This project is worth 40% of the final course grade.
 * 45%: Final Presentation, Status, and Report
 
 **Important:** "Status" grading will be based primarily on your documentation.
-Write in-depth documentation! You'll need to use rustdoc to generate
-documentation before each presentation
+Spend time on this and write in-depth documentation!
+You'll need to use rustdoc to generate documentation before each presentation
 (see below: [Documentation](#documentation)).
 
 ## Project Guidelines
@@ -122,6 +122,9 @@ at each milestone and the final presentation. This doesn't mean documenting
 every single function - but you need detailed documentation for the modules,
 functionality, and all important structs/functions.
 
+**Important:** Spend time on this and write in-depth documentation.
+It will be a significant part of our grading!
+
 Please host docs somewhere online. You can use
 [hosting on Eniac](http://www.seas.upenn.edu/cets/answers/webpage.html),
 or you may use a [GitHub Pages](https://pages.github.com/) project site.
@@ -133,6 +136,11 @@ export everything. To do this, use:
 ```sh
 cargo rustdoc -- --no-defaults --passes collapse-docs --passes unindent-comments
 ```
+
+Here is some [example rustdoc output](http://cis198-2016s.github.io/final-sample-rustdoc/webchat/).
+This shows the output of the above command on our HW07 solution. Note that it
+doesn't have any _module-level_ documentation - which will be most important
+for you.
 
 If you're contributing to another project, you should send us a compilation of
 the documentation for everything **you** have written as part of your project.
