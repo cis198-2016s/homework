@@ -122,8 +122,9 @@ at each milestone and the final presentation. This doesn't mean documenting
 every single function - but you need detailed documentation for the modules,
 functionality, and all important structs/functions.
 
-Please host docs somewhere online. You can use hosting on Eniac, or you may
-use a [GitHub Pages](https://pages.github.com/) project site.
+Please host docs somewhere online. You can use
+[hosting on Eniac](http://www.seas.upenn.edu/cets/answers/webpage.html),
+or you may use a [GitHub Pages](https://pages.github.com/) project site.
 
 By default, `cargo doc --no-deps` will export documentation for everything
 _public_ in your crate. However, for the project, you'll likely want to
