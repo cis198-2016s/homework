@@ -33,10 +33,6 @@ Write in-depth documentation! You'll need to use rustdoc to generate
 documentation before each presentation
 (see below: [Documentation](#documentation)).
 
-Please host docs somewhere online. For example, you may use a
-[GitHub Pages](https://pages.github.com/) project site,
-by putting the generated docs on a `gh-pages` branch.
-
 ## Project Guidelines
 
 * Groups may be 1-3 people, 2 preferred. Collaborate via GitHub (obviously).
@@ -120,21 +116,29 @@ If you're contributing, this means it should be in your fork.
 
 ## Documentation
 
+If you are working on a standalone project, you should have rustdocs
+documenting all of the work you've done so far,
+at each milestone and the final presentation. This doesn't mean documenting
+every single function - but you need detailed documentation for the modules,
+functionality, and all important structs/functions.
+
+Please host docs somewhere online. You can use hosting on Eniac, or you may
+use a [GitHub Pages](https://pages.github.com/) project site.
+
+By default, `cargo doc --no-deps` will export documentation for everything
+_public_ in your crate. However, for the project, you'll likely want to
+export everything. To do this, use:
+
 ```sh
 cargo rustdoc -- --no-defaults --passes collapse-docs --passes unindent-comments
 ```
 
-If you are working on a standalone project, you should have rustdoc
-documentation, hosted online, documenting all of the work you've done so far,
-at each milestone and the final presentation. This doesn't mean documenting
-every single function - but you need detailed documentation for the modules,
-functionality, and all important functions.
-
 If you're contributing to another project, you should send us a compilation of
-the documentation for everything you have written as part of your project.
+the documentation for everything **you** have written as part of your project.
 
-If there is any additional extra information that you think doesn't belong in
-the documentation, email it to us before class.
+If there is any additional extra information that you want
+to send to us but think doesn't belong in
+the documentation, email it to us before your presentation.
 
 ## Final Report
 
