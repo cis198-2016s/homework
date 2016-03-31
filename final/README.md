@@ -51,7 +51,7 @@ This project is worth 40% of the final course grade.
   to scale it back. Carve out a reasonable subset of the idea as your baseline,
   and have additional goals on top of that.
 
-* We would really like your project to be open source! You don't have to if you
+* We would really like your project to be open-source! You don't have to if you
   really don't want to, but contributing to the Rust ecosystem is ideal.
 
 * If you have no ideas you like, you might consider putting out a call for
@@ -88,6 +88,7 @@ have to use any of them.
 * Abstract: Your idea in a sentence or two. New project or contribution?
 
 * Open-source or not. If not, why?
+  You don't need to pick a license right now, but MIT and Apache are good.
 
 * Project outline: Your minimal goals, expected goals, and stretch goals.
     * This should be detailed enough that we can judge the complexity and merit.
