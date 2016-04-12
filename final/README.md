@@ -125,6 +125,15 @@ functionality, and all important structs/functions.
 **Important:** Spend time on this and write in-depth documentation.
 It will be a significant part of our grading!
 
+For any general information, put it on your crate root module. You can use
+this syntax for module documentation:
+
+```
+//! if you put this documentation comment style in a
+//! module, it will apply to the module itself instead
+//! of the thing after it
+```
+
 Please host docs somewhere online. You can use
 [hosting on Eniac](http://www.seas.upenn.edu/cets/answers/webpage.html),
 or you may use a [GitHub Pages](https://pages.github.com/) project site.
