@@ -160,4 +160,27 @@ the documentation, email it to us before your presentation.
 
 ## Final Report
 
-TBA
+Write your report in markdown, and save it as `REPORT.md` in your repository
+root, and we'll find it there. If you don't have a dedicated repository for
+this project (e.g. you are forking another project) or you plan to immediately
+publicize your project, put the report in a [Gist](https://gist.github.com/)
+and email us the link. If you have screenshots or images, save them in the repo
+and embed them in `REPORT.md`.
+
+We'll expect about 2-3 printed-pages-worth of info. Include whatever is
+appropriate or important for your project, such as:
+
+* Summary
+* Accomplishments
+    * Versus original goals
+* Components, structure, design decisions
+* Testing approach and results
+* Benchmarks
+* Limitations
+* Postmortem
+    * What went well
+    * What you would do differently
+* etc.
+
+Keep in mind that if your repo is public, your report will be as well.
+If you have any private feedback, email us.
