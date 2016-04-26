@@ -171,6 +171,7 @@ We'll expect about 2-3 printed-pages-worth of info. Include whatever is
 appropriate or important for your project, such as:
 
 * Summary
+* Approximate time spent
 * Accomplishments
 * Components, structure, design decisions
 * Testing approach and results
@@ -180,6 +181,13 @@ appropriate or important for your project, such as:
     * What went well
     * What you would do differently
 * etc.
+
+**Your documentation is still a part of the final milestone grade.** Anything
+you've written for documentation can be copied to your report if it's
+important. Make sure you have an appropriate amount of documentation. If you
+have a ton of code but haven't written much documentation for it, your rustdoc
+output will look very sparse and it'll be harder for us to tell how much you
+have done. Comments don't count, as they don't appear in the rustdoc output.
 
 Keep in mind that if your repo is public, your report will be as well.
 If you have any private feedback, email us.
