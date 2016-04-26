@@ -182,6 +182,9 @@ appropriate or important for your project, such as:
     * What you would do differently
 * etc.
 
+If your project would benefit from having a video, that would be great. You
+can, e.g., record using [OBS](https://obsproject.com/) and upload to YouTube.
+
 **Your documentation is still a part of the final milestone grade.** Anything
 you've written for documentation can be copied to your report if it's
 important. Make sure you have an appropriate amount of documentation. If you
