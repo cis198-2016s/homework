@@ -172,7 +172,6 @@ appropriate or important for your project, such as:
 
 * Summary
 * Accomplishments
-    * Versus original goals
 * Components, structure, design decisions
 * Testing approach and results
 * Benchmarks
