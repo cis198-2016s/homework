@@ -90,7 +90,7 @@ Now, instead of TMLL's `push` and `pop`, we'll implement:
 * (`pub`) `bst.insert(i32) -> bool`: Insert an element into the BST. Return
   true if successful, or false if the element was already in the BST.
 * (`pub`) `bst.search(i32) -> bool`: Search for an element in the BST. Return
-  true iff the element was found.
+  true if the element was found.
 
 #### Hints from our reference implementation
 
