@@ -63,12 +63,6 @@ In the _relay thread_, each message received via the MPSC channel should be
 sent to all of the clients (including the originator). Once again, iterators
 allow us to use the MPSC receiver very nicely:
 
-```rust
-// fn relay_thread
-for action in relay_mpsc_recv {
-    // Send message to all clients.
-}
-```
 
 **Aside:** For many applications, the one-thread-per-client model does not work
 well. For systems which will have many (thousands or more) clients, spawning
