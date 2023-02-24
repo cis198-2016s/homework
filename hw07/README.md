@@ -52,13 +52,6 @@ come in from its respective client. This can be expressed very elegantly using
 iterators: every time a message comes in, the loop runs once. When the channel
 closes, the loop terminates.
 
-```rust
-// fn client_thread
-for message in client_recv.incoming_messages() {
-    // Handle message; relay via MPSC channel.
-}
-```
-
 In the _relay thread_, each message received via the MPSC channel should be
 sent to all of the clients (including the originator). Once again, iterators
 allow us to use the MPSC receiver very nicely:
